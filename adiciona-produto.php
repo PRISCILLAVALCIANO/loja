@@ -1,19 +1,11 @@
-<?php include("cabecalho.php"); ?>
+<?php 
+include("cabecalho.php"); 
+include("conecta.php");
+include("banco-produto.php");
 
-<?php 		
-
-		function insereProduto($conexao, $nome, $preco){
+ 	$nome = $_GET["nome"];
+	$preco = $_GET["preco"];
 			
-			$query = "insert into produtos (nome, preco) values ('{$nome}', {$preco})";
-			return mysqli_query($conexao, $query);
-
-		}
-
-		$nome = $_GET["nome"];
-		$preco = $_GET["preco"];
-		$conexao = mysqli_connect('localhost', 'root', '', 'loja');
-	 		
-	 			
 
 		if(insereProduto($conexao, $nome, $preco)) { ?>
 
@@ -25,6 +17,7 @@
 			<p class="text-danger">O produto <?= $nome; ?> não foi adicionado: <?= $msg?></p>
 		<?php
 		}
-		?>
+
+?>
 
 <?php include("rodape.php"); ?>
