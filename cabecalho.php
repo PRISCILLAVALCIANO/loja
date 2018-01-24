@@ -15,14 +15,16 @@
 
 				<div>
 					<ul class="nav navbar-nav">
-						<li><a href="produto-formulario.php">Adiciona Produto</a></li>
+						<li><a href="produto-formulario.php">Produto</a></li>
 						<li><a href="produto-lista.php">Lista de Produtos</a></li>
-						<li><a href="sobre.php">Sobre</a></li>						
+						<li><a href="vendas-pedido.php">Vendas</a></li>
+						<li><a href="vendas-lista.php">Lista de Vendas</a></li>
+						<li><a href="entregas.php">Entregas</a></li>						
 					</ul>
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="container">
 
 		<div class="principal">
