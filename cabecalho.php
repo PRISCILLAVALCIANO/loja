@@ -10,7 +10,7 @@
 	<div class="navbar navbar-inverse navbar-fixed-top">
     	<div class="container">
 			<div class="navbar-header">
-				<a href="index.php" class="navbar-brand">Minha Loja</a>
+				<a href="principal.php" class="navbar-brand">Minha Loja</a>
 			</div>
 
 				<div>
