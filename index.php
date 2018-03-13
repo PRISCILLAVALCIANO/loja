@@ -8,6 +8,9 @@
 <?php if(isset($_GET["login"]) && $_GET["login"]==false){ ?>
     <p class="alert-danger">Usuário ou senha inválidos!</a>
 <?php }?>
+<?php if(isset($_GET["falhaDeSeguranca"]) && $_GET["falhaDeSeguranca"]==true){ ?>
+    <p class="alert-danger">Você não está logado!</a>
+<?php }?>
 		<h1>pvloja</h1>
 		<h2>Login</h2>
 		<form action="login.php" method="post">
