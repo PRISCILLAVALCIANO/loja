@@ -1,10 +1,13 @@
-<?php include("cabecalho.php"); ?>
+<?php 
+include("cabecalho.php"); 
+include("logica-usuario.php");
+?>
 <?php if(isset($_GET["login"]) && $_GET["login"]==true){ ?>
     <p class="alert-sucess">Logado com sucesso!</a>
 <?php }?>
-<?php if(isset($_COOKIE["usuario_logado"])){?>
-    <p class="text-sucess">Usuário Logado: <?=$_COOKIE["usuario_logado"]?></p>
-
+<?php if(usuarioEstaLogado()){?>
+    <p class="text-sucess">Usuário Logado: <?= usuarioLogado()?> 
+    <a href="logout.php">Logout</a></p>
 <?php }?>
 			<h1>Bem vindo!</h1>			
 
