@@ -1,12 +1,14 @@
 <?php 
 include("cabecalho.php"); 
 include("logica-usuario.php");
+
+verificaUsuario();
 ?>
 <?php if(isset($_GET["login"]) && $_GET["login"]==true){ ?>
-    <p class="alert-sucess">Logado com sucesso!</a>
+    <p class="alert-success">Logado com sucesso!</a>
 <?php }?>
 <?php if(usuarioEstaLogado()){?>
-    <p class="text-sucess">Usuário Logado: <?= usuarioLogado()?> 
+    <p class="text-success">Usuário Logado: <?= usuarioLogado()?> 
     <a href="logout.php">Logout</a></p>
 <?php }?>
 			<h1>Bem vindo!</h1>			
