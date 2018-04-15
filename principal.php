@@ -4,9 +4,11 @@ include("logica-usuario.php");
 
 verificaUsuario();
 ?>
-<?php if(isset($_GET["login"]) && $_GET["login"]==true){ ?>
-    <p class="alert-success">Logado com sucesso!</a>
-<?php }?>
+<?php if(isset($_SESSION["success"])) { ?>
+    <p class="alert-success"><?= $_SESSION["success"]?></p>
+<?php 
+    unset($_SESSION["success"]);
+}?>
 <?php if(usuarioEstaLogado()){?>
     <p class="text-success">Usuário Logado: <?= usuarioLogado()?> 
     <a href="logout.php">Logout</a></p>

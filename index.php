@@ -1,3 +1,6 @@
+<?php
+include("logica-usuario.php");
+?>
 <html>
 <head>
     <title>Minha loja</title>
@@ -9,17 +12,17 @@
 <h1>pvloja</h1>
 <div class="container">
 <div class="principal">
-<form action="login.php" method="post">
-	<?php if(isset($_GET["logout"]) && $_GET["logout"]==true){ ?>
-		<p class="alert-success">Deslogado com sucesso!</a>
-	<?php }?>
-	<?php if(isset($_GET["login"]) && $_GET["login"]==false){ ?>
-		<p class="alert-danger">Usuário ou senha inválidos!</a>
-	<?php }?>
-	<?php if(isset($_GET["falhaDeSeguranca"]) && $_GET["falhaDeSeguranca"]==true){ ?>
-		<p class="alert-danger">Você não está logado!</a>
-	<?php }?>
-			
+<?php if(isset($_SESSION["success"])) { ?>
+		<p class="alert-success"><?= $_SESSION["success"]?></p>
+	<?php 
+		unset($_SESSION["success"]);
+	}?>
+	<?php if(isset($_SESSION["danger"])) { ?>
+		<p class="alert-danger"><?= $_SESSION["danger"]?></p>
+	<?php 
+		unset($_SESSION["danger"]);
+	}?>
+<form action="login.php" method="post">	
 			<h2>Login</h2>
 				<table class="table">
 					<tr>
