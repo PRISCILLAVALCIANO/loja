@@ -28,5 +28,5 @@ verificaUsuario();
 		}
 
 ?>
-
+	<a class="btn btn-light" href="produto-formulario.php" role="button">Voltar</a>
 <?php include("rodape.php"); ?>

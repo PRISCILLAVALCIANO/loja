@@ -26,5 +26,6 @@ include("banco-produto.php");
 		}
 
 ?>
+		<a class="btn btn-light" href="produto-lista.php" role="button">Voltar</a>
 
 <?php include("rodape.php"); ?>

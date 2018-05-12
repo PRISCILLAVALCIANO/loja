@@ -11,7 +11,7 @@ verificaUsuario();
 }?>
 <?php if(usuarioEstaLogado()){?>
     <p class="text-success">Usuário Logado: <?= usuarioLogado()?> 
-    <a href="logout.php">Logout</a></p>
+    <a class="btn btn-warning" href="logout.php" role="button">Logout</a>
 <?php }?>
 			<h1>Bem vindo!</h1>			
 

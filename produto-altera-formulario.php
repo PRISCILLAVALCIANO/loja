@@ -55,7 +55,8 @@ $usado = $produto['usado'] ? "checked='checked'" : "";
 
 				 	<tr>
 					
-						<td><input class="btn btn-primary" type="submit" value="Alterar"/></td> 	
+						<td><input class="btn btn-primary" type="submit" value="Alterar"/></td> 
+						<td><a class="btn btn-light" href="produto-lista.php" role="button">Voltar</a></td>	
 					
 					 </tr>
 				 	
