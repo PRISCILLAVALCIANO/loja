@@ -3,6 +3,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 include("logica-usuario.php");
 include("mostra-alerta.php");
 ?>
+
 <html>
 <head>
     <title>Minha loja</title>
