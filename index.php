@@ -1,5 +1,6 @@
 <?php
 include("logica-usuario.php");
+include("mostra-alerta.php");
 ?>
 <html>
 <head>
@@ -12,16 +13,13 @@ include("logica-usuario.php");
 <h1>pvloja</h1>
 <div class="container">
 <div class="principal">
-<?php if(isset($_SESSION["success"])) { ?>
-		<p class="alert-success"><?= $_SESSION["success"]?></p>
-	<?php 
-		unset($_SESSION["success"]);
-	}?>
-	<?php if(isset($_SESSION["danger"])) { ?>
-		<p class="alert-danger"><?= $_SESSION["danger"]?></p>
-	<?php 
-		unset($_SESSION["danger"]);
-	}?>
+
+<?php 
+mostraAlerta("success");
+mostraAlerta("danger");
+?>
+
+
 <form action="login.php" method="post">	
 			<h2>Login</h2>
 				<table class="table">
