@@ -1,8 +1,9 @@
 <?php 
-include("cabecalho.php"); 
-include("conecta.php");
-include("banco-produto.php");
+require_once("cabecalho.php");
+require_once("banco-produto.php");
+require_once("logica-usuario.php");
 
+verificaUsuario();
 $produtos =listaProdutos($conexao);
 ?>
 

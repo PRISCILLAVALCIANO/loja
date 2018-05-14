@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
-include("mostra-alerta.php");
+require_once("mostra-alerta.php");
 ?>
 
 <html>
@@ -22,11 +22,12 @@ include("mostra-alerta.php");
 					<ul class="nav navbar-nav">
 						<li><a href="produto-formulario.php">Produto</a></li>
 						<li><a href="produto-lista.php">Lista de Produtos</a></li>
-						<li><a href="vendas-pedido.php">Vendas</a></li>
+						<li><a href="venda-formulario.php">Vendas</a></li>
 						<li><a href="vendas-lista.php">Lista de Vendas</a></li>
 						<li><a href="entregas.php">Entregas</a></li>						
 					</ul>
 				</div>
+				<li><a class="btn btn-warning" href="logout.php" role="button">Logout</a></li>
 			</div>
 		</div>
 		

@@ -1,6 +1,6 @@
 <?php 
-include("cabecalho.php"); 
-include("logica-usuario.php");
+require_once("cabecalho.php"); 
+require_once("logica-usuario.php");
 
 verificaUsuario();
 ?>
@@ -11,7 +11,6 @@ verificaUsuario();
 }?>
 <?php if(usuarioEstaLogado()){?>
     <p class="text-success">Usuário Logado: <?= usuarioLogado()?> 
-    <a class="btn btn-warning" href="logout.php" role="button">Logout</a>
 <?php }?>
 			<h1>Bem vindo!</h1>			
 
